@@ -2,15 +2,13 @@ package com.example.eercisecontrollerlayer2.ControllerBank;
 import com.example.eercisecontrollerlayer2.ApiResponse.ApiResponse;
 import com.example.eercisecontrollerlayer2.BankManagementSystem.BankManagementSystem;
 import org.springframework.web.bind.annotation.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
+
 
 import java.util.ArrayList;
 
-@Data
-@AllArgsConstructor
 
 
+@RestController
 @RequestMapping("/api/v1/Bank")
 
 public class BankController {
