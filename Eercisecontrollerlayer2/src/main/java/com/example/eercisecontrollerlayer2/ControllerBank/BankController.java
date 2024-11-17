@@ -43,7 +43,7 @@ public class BankController {
 
     @PutMapping("/Withdraw/{index}/{amount}")
     public ApiResponse Withdraws(@PathVariable int index, @PathVariable double amount) {
-        if(this.bank.get(index).getBalance()>=amount);
+        if(this.bank.get(index).getBalance()>=amount)
         this.bank.get(index).setBalance(this.bank.get(index).getBalance()-amount);
         return new ApiResponse("Withdrawal successful");
     }
